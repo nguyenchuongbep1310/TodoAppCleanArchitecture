@@ -5,12 +5,11 @@ using System.Threading.Tasks;
 
 namespace Domain.Enities
 {
-    public class Project
+    public class Project : RootEntity
     {
-        public int ProjectId { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-        public IList<User> Users { get; set; }
-        public IList<TodoTask> Tasks { get; set; }
+        public string CreatedBy { get; set; }
+        public List<Task> Tasks { get; set; }
     }
 }
