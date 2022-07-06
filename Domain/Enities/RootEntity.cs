@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Enities
 {
-    public class RootEntity
+    public abstract class RootEntity
     {
         public string Id { get; set; }
     }
